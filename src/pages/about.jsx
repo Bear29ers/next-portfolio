@@ -6,6 +6,8 @@ import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import { useEffect, useRef } from 'react';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -86,6 +88,8 @@ const about = () => {
           </div>
 
           <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
