@@ -9,7 +9,7 @@ const Details = ({ type, time, place, info }) => {
       <LiIcon reference={ref} />
       <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, type: 'spring' }}>
         <h3 className='capitalize font-bold text-2xl'>{type}</h3>
-        <span className='capitalize font-medium text-dark/75'>
+        <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
           {time} | {place}
         </span>
         <p className='font-medium w-full'>{info}</p>
@@ -31,14 +31,14 @@ const Education = () => {
       <div ref={ref} className='w-[75%] mx-auto relative'>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className='absolute top-0 left-9 w-[4px] h-full bg-dark origin-top'
+          className='absolute top-0 left-9 w-[4px] h-full bg-dark dark:bg-light origin-top'
         />
         <ul className='w-full flex flex-col items-center justify-between ml-4'>
           <Details
             type='Bachelor Of Science In Computer Science'
             time='2016-2020'
             place='Massachusetts Institute Of Technology (MIT)'
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.'
           />
           <Details
             type='Master Of Computer Science'
@@ -50,7 +50,7 @@ const Education = () => {
             type='Online Coursework'
             time='2016-2020'
             place='Coursera And EdX'
-            info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering."
+            info='Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering.'
           />
         </ul>
       </div>
